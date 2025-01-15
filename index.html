@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chessboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+       overflow-y: hidden;
+        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: burlywood;
+      overflow: hidden; /* Disable scroll on both axes */
+      flex-direction: column;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    .chessboard-container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+      width: 50vmin;
+      height: 50vmin;
+      position: relative;
+    }
+
+    th, td {
+      width: 12.5%;
+      height: 12.5%;
+      border: 1px solid #333;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    td {
+      background-color: #fff;
+    }
+
+    td:nth-child(even) {
+      background-color: #000;
+    }
+
+    .row-header, .col-header {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .col-header {
+      text-align: center;
+    }
+
+    .row-header {
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      table {
+        width: 90vmin;
+        height: 90vmin;
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+    }
+
+    @media (max-width: 480px) {
+      table {
+        width: 90vmin;
+        height: 90vmin;
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>I AM ANUSHA REHMAN QURESHI</h2>
+  <h1>Chessboard</h1>
+
+  <div class="chessboard-container">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+          <th class="col-header"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <th class="row-header"></th>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
